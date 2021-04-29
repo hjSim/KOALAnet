@@ -2,7 +2,7 @@
 **This is the official repository of "[KOALAnet: Blind Super-Resolution using Kernel-Oriented Adaptive Local Adjustment](https://arxiv.org/abs/2012.08103)", accepted to CVPR, 2021**
 
 ## Coming soon
-We plan on providing the training and test code along with the test dataset that we generated and evaluated on.
+We plan on providing the training and test code along with the test dataset that we generated and evaluated on.  
 This will be updated at least by the CVPR 2021 conference date.
 
 ## Contact
