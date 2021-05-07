@@ -9,7 +9,7 @@ This will be updated at least by the CVPR 2021 conference date.
 Please contact us via any of the following emails: sooyekim@kaist.ac.kr, flhy5836@kaist.ac.kr or leave a note in the issues tab.
 
 **Reference**  
-> Sooye Kim*, Hyeonjun Sim*, and Munchurl Kim "KOALAnet: Blind Super-Resolution using Kernel-Oriented Adaptive Local Adjustment", accepted to CVPR, 2021. (* *equal contribution*)
+> Soo Ye Kim*, Hyeonjun Sim*, and Munchurl Kim "KOALAnet: Blind Super-Resolution using Kernel-Oriented Adaptive Local Adjustment", accepted to CVPR, 2021. (* *equal contribution*)
 > 
 **BibTeX**
 ```bibtex
