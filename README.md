@@ -63,7 +63,7 @@ Our code is implemented using TensorFlow and was tested under the following sett
 ### Notes
 * Set ```--factor``` to ```2``` or ```4``` depending on your desired upscaling factor. 
 * If ```--tensorboard True``` (defaults to True), tensorboard logs will be saved.
-* Model settings (gaussian kernel size, local filter size in the downsampling and upsampling networks, etc) and hyperparameters (number of epochs, batch size, patch size, learning rate, etc) are defined as arguments. Please refer to main.py for details.
+* Model settings (gaussian kernel size, local filter size in the downsampling and upsampling networks, etc) and hyperparameters (number of epochs, batch size, patch size, learning rate, etc) are defined as arguments. Default values are what we used for the paper. Please refer to main.py for details.
 
 ## Contact
 Please contact us via any of the following emails: sooyekim@kaist.ac.kr, flhy5836@kaist.ac.kr or leave a note in the issues tab.
