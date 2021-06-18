@@ -29,8 +29,8 @@ Our code is implemented using TensorFlow and was tested under the following sett
 ## Test Code
 1. Download the necessary files and place them in **<source_path>**:
     * Source code (main.py, koalanet.py, ops.py and utils.py)
-    * Download the test dataset from [here](https://www.dropbox.com/sh/m0e2wezc2nv3z22/AAAaA-b1BGohioe4_EHzE_oIa?dl=0).
-    * Download the trained weights from [here](https://www.dropbox.com/sh/zkwia1ndleokeex/AAClDJY5sUDVWRLgSfi1sL3ka?dl=0).
+    * Download the test dataset from [here](https://www.dropbox.com/sh/zkwia1ndleokeex/AAClDJY5sUDVWRLgSfi1sL3ka?dl=0).
+    * Download the trained weights from [here](https://www.dropbox.com/sh/m0e2wezc2nv3z22/AAAaA-b1BGohioe4_EHzE_oIa?dl=0).
 2. Set arguments defined in main.py and run main
     * Set ```--phase 'test'``` and provide the input and label paths to ```--test_data_path``` and ```--test_label_path``` and checkpoint path to ```--test_ckpt_path```.
     * Example: ```python main.py --phase 'test' --test_data_path './testset/Set5/LR/X4/imgs' --test_label_path './testset/Set5/HR' --test_ckpt_path './pretrained_ckpt'```
