@@ -65,6 +65,11 @@ Our code is implemented using TensorFlow and was tested under the following sett
 * If ```--tensorboard True``` (defaults to True), tensorboard logs will be saved.
 * Model settings (gaussian kernel size, local filter size in the downsampling and upsampling networks, etc) and hyperparameters (number of epochs, batch size, patch size, learning rate, etc) are defined as arguments. Default values are what we used for the paper. Please refer to main.py for details.
 
+## Test Dataset
+In blind SR, not a lot of benchmark datasets are available yet. We release the [random anisotropic Gaussian testset](https://www.dropbox.com/sh/zkwia1ndleokeex/AAClDJY5sUDVWRLgSfi1sL3ka?dl=0) we used in our paper, consisting of six datasets (Set5, Set14, BSD100, Urban100, Manga109 and DIV2K) and two scale factors (2 and 4). We hope that the community will use them for future research in SR.  
+
+**Disclaimer:** The degradation kernels folder contains images of degradation kernels used for generating the corresponding LR image, *scaled and upsampled for better visualization*. They should only be used as visual reference.
+
 ## Contact
 Please contact us via any of the following emails: sooyekim@kaist.ac.kr, flhy5836@kaist.ac.kr or leave a note in the issues tab.
 
