@@ -7,9 +7,8 @@ from koalanet import KOALAnet
 def parse_args():
 	parser = argparse.ArgumentParser(description="SISR")
 
-	""" Set Phase """
 	parser.add_argument('--phase', type=str, default='test', choices=['train', 'test'])
-	parser.add_argument('--eval', type=bool, default=True, help='If set to True, evaluation is performed with HR images during the testing phase')
+	parser.add_argument('--factor', type=int, default=4, help='scale factor')
 
 	""" Training Settings """
 	parser.add_argument('--training_stage', type=int, default=3, choices=[1, 2, 3], help='Set stage for the 3-stage training strategy.')
@@ -18,13 +17,13 @@ def parse_args():
 	parser.add_argument('--validation_data_path', type=str, default='./dataset/DIV2K/val/DIV2K_valid_HR', help='validation_dataset path')
 
 	""" Testing Settings """
+	parser.add_argument('--eval', type=bool, default=True, help='If set to True, evaluation is performed with HR images during the testing phase')
 	parser.add_argument('--test_data_path', type=str, default='./testset/Set5/LR/X4/imgs', help='test dataset path')
 	parser.add_argument('--test_label_path', type=str, default='./testset/Set5/HR', help='test dataset label path for eval')
 	parser.add_argument('--test_ckpt_path', type=str, default='./pretrained_ckpt', help='checkpoint path with trained weights')
 	parser.add_argument('--test_patch', type=int, nargs='+', default=[1, 1], help='input image can be divide into an nxn grid of smaller patches in the test phase to fit memory')
 
 	""" Model Settings """ 
-	parser.add_argument('--factor', type=int, default=4, help='scale factor')
 	parser.add_argument('--channels', type=int, default=3, help='img channels')
 	parser.add_argument('--bicubic_size', type=int, default=20, help='size of bicubic kernel - should be an even number; we recommend at least 4*factor; only 4 centered values are meaningful and other (bicubic_size-4) values are all zeros.')
 	parser.add_argument('--gaussian_size', type=int, default=15, help='size of anisotropic gaussian kernel - should be an odd number')
