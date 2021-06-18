@@ -9,22 +9,21 @@ from ops import *
 
 class KOALAnet:
 	def __init__(self, args):
-		""" Set Phase """
 		self.phase = args.phase
-		self.eval = args.eval
+		self.factor = args.factor
 
 		""" Training Settings """
 		self.training_stage = args.training_stage
 		self.tensorboard = args.tensorboard
 
 		""" Testing Settings """
+		self.eval = args.eval
 		self.test_data_path = args.test_data_path
 		self.test_label_path = args.test_label_path
 		self.test_ckpt_path = args.test_ckpt_path
 		self.test_patch = args.test_patch
 
 		""" Model Settings """ 
-		self.factor = args.factor
 		self.channels = args.channels
 		self.bicubic_size = args.bicubic_size
 		self.gaussian_size = args.gaussian_size
