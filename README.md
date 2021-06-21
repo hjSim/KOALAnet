@@ -39,11 +39,11 @@ Our code is implemented using TensorFlow and was tested under the following sett
 ### Notes
 * Set ```--factor``` to ```2``` or ```4``` depending on your desired upscaling factor. 
 * If you're using the provided testset, 6 datasets each with 2 scaling factors can be used. To try these out, set ```--test_data_path``` to ```'./testset/[dataset]/LR/X[factor]/imgs'``` and ```--test_label_path``` to ```'./testset/[dataset]/HR'```, where:
-    * ```[dataset]: Set5, Set14, BSD100, Urban100, Manga109, DIV2K```
-    * ```[factor]: 2, 4```
+    * ```[dataset]: Set5, Set14, BSD100, Urban100, Manga109 or DIV2K```
+    * ```[factor]: 2 or 4```
 * If you want to test our model on your own data, set ```--test_data_path``` and ```--test_label_path``` to your desired path.
 * If no ground truth HR images are available, set ```--eval False``` (defaults to True) to only save images without computing PSNR.
-* If you're getting memory issues due to large input image sizes and limited memory, try setting ```--test_patch [2, 2], [4, 4], ...``` (defaults to ```[1, 1]```). This option divides the input into an nxn grid, performs SR on each patch and stitches them back into a full image. Inference time measurements would be inaccurate in this case.
+* If you're getting memory issues due to large input image sizes and limited memory, try setting ```--test_patch 2, 2 or 4, 4 ...``` (defaults to ```1, 1```). This option divides the input into an nxn grid, performs SR on each patch and stitches them back into a full image. Inference time measurements would be inaccurate in this case.
 * When testing with your trained version, set ```--test_ckpt_path``` accordingly, to where you've stored the weights.
 
 ## Training Code
