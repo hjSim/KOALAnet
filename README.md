@@ -27,10 +27,10 @@ Our code is implemented using TensorFlow and was tested under the following sett
 * Windows 10
 
 ## Test Code
-1. Download the necessary files and place them in **<source_path>**:
+1. Download the files below and place them in **<source_path>**:
     * Source code (main.py, koalanet.py, ops.py and utils.py)
-    * Download the test dataset from [here](https://www.dropbox.com/sh/zkwia1ndleokeex/AAClDJY5sUDVWRLgSfi1sL3ka?dl=0).
-    * Download the trained weights from [here](https://www.dropbox.com/sh/m0e2wezc2nv3z22/AAAaA-b1BGohioe4_EHzE_oIa?dl=0).
+    * Test dataset is [here](https://www.dropbox.com/sh/zkwia1ndleokeex/AAClDJY5sUDVWRLgSfi1sL3ka?dl=0).
+    * Trained weights are [here](https://www.dropbox.com/sh/m0e2wezc2nv3z22/AAAaA-b1BGohioe4_EHzE_oIa?dl=0).
 2. Set arguments defined in main.py and run main
     * Set ```--phase 'test'``` and provide the input and label paths to ```--test_data_path``` and ```--test_label_path``` and checkpoint path to ```--test_ckpt_path```.
     * Example: ```python main.py --phase 'test' --test_data_path './testset/Set5/LR/X4/imgs' --test_label_path './testset/Set5/HR' --test_ckpt_path './pretrained_ckpt'```
@@ -47,9 +47,9 @@ Our code is implemented using TensorFlow and was tested under the following sett
 * When testing with your trained version, set ```--test_ckpt_path``` accordingly, to where you've stored the weights.
 
 ## Training Code
-1. Download the necessary files and place them in **<source_path>**:
+1. Download the files below and place them in **<source_path>**:
     * Source code (main.py, koalanet.py, ops.py and utils.py)
-    * Download a training dataset (e.g. [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/)).
+    * A training dataset (e.g. [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/)).
 2. 3-stage training:
     * Pretrain the downsampling network with ```python main.py --phase 'train' --training_stage 1```
     * Pretrain the upsampling network with ```python main.py --phase 'train' --training_stage 2```
@@ -68,7 +68,7 @@ Our code is implemented using TensorFlow and was tested under the following sett
 ## Test Dataset
 In blind SR, not a lot of benchmark datasets are available yet. We release the [random anisotropic Gaussian testset](https://www.dropbox.com/sh/zkwia1ndleokeex/AAClDJY5sUDVWRLgSfi1sL3ka?dl=0) we used in our paper, consisting of six datasets (Set5, Set14, BSD100, Urban100, Manga109 and DIV2K) and two scale factors (2 and 4). We hope that the community will use them for future research in SR.  
 
-**Disclaimer:** The degradation kernels folder contains images of degradation kernels used for generating the corresponding LR image, *scaled and upsampled for better visualization*. They should only be used as visual reference.
+**Disclaimer:** The ```degradation_kernels``` folder contains images of degradation kernels used for generating the corresponding LR image, *scaled and upsampled for better visualization*. They should only be used as visual reference.
 
 ## Contact
 Please contact us via any of the following emails: sooyekim@kaist.ac.kr, flhy5836@kaist.ac.kr or leave a note in the issues tab.
