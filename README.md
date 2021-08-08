@@ -13,13 +13,12 @@ Please watch our **[5 min presentation](https://youtu.be/j9WX5CkdF5w)** on YouTu
 > 
 **BibTeX**
 ```bibtex
-@InProceedings{Kim_2021_CVPR,
-    author    = {Kim, Soo Ye and Sim, Hyeonjun and Kim, Munchurl},
-    title     = {KOALAnet: Blind Super-Resolution Using Kernel-Oriented Adaptive Local Adjustment},
-    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    month     = {June},
-    year      = {2021},
-    pages     = {10611-10620}
+@inproceedings{kim2021koalanet,
+  title={KOALAnet: Blind Super-Resolution using Kernel-Oriented Adaptive Local Adjustment},
+  author={Kim, Soo Ye and Sim, Hyeonjun and Kim, Munchurl},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={10611--10620},
+  year={2021}
 }
 ```
 ### Requirements
