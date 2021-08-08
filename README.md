@@ -4,6 +4,8 @@
 We provide the training and test code along with the trained weights and the test dataset.  
 If you find this repository useful, please consider citing our [paper](https://arxiv.org/abs/2012.08103).
 
+Please watch our **[5 min presentation](https://youtu.be/j9WX5CkdF5w)** on YouTube.
+
 ![framework](/KOALAnet_framework.png)
 
 ### Reference   
