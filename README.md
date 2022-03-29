@@ -1,5 +1,5 @@
 # KOALAnet
-**This is the official repository of "KOALAnet: Blind Super-Resolution using Kernel-Oriented Adaptive Local Adjustment", CVPR 2021.**
+**This is the official repository of "KOALAnet: Blind Super-Resolution using Kernel-Oriented Adaptive Local Adjustment", CVPR 2021,** by [Soo Ye Kim](https://sites.google.com/view/sooyekim)\*, [Hyeonjun Sim](https://sites.google.com/view/hjsim)\* and Munchurl Kim. (\* equal contribution)
 
 We provide the training and test code along with the trained weights and the test dataset.  
 If you find this repository useful, please consider citing our paper [[arXiv](https://arxiv.org/abs/2012.08103)].
