@@ -37,7 +37,10 @@ Our code is implemented using TensorFlow and was tested under the following sett
     * Trained weights are [here](https://www.dropbox.com/sh/m0e2wezc2nv3z22/AAAaA-b1BGohioe4_EHzE_oIa?dl=0).
 2. Set arguments defined in main.py and run main
     * Set ```--phase 'test'``` and provide the input and label paths to ```--test_data_path``` and ```--test_label_path``` and checkpoint path to ```--test_ckpt_path```.
-    * Example: ```python main.py --phase 'test' --test_data_path './testset/Set5/LR/X4/imgs' --test_label_path './testset/Set5/HR' --test_ckpt_path './pretrained_ckpt'```
+    * Example: 
+    ```
+    python main.py --phase 'test' --test_data_path './testset/Set5/LR/X4/imgs' --test_label_path './testset/Set5/HR' --test_ckpt_path './pretrained_ckpt'
+    ```
 3. Result images will be saved in **<source_path>/results/imgs_test**.
 
 ### Notes
@@ -58,7 +61,10 @@ Our code is implemented using TensorFlow and was tested under the following sett
     * Pretrain the downsampling network with ```python main.py --phase 'train' --training_stage 1```
     * Pretrain the upsampling network with ```python main.py --phase 'train' --training_stage 2```
     * Joint training of both networks with ```python main.py --phase 'train' --training_stage 3```
-    * Set ```--training_data_path``` and ```--training_label_path``` to the directory containing training and validation data (e.g. ```python main.py --phase 'train' --training_stage 3 --training_data_path './dataset/DIV2K/train/DIV2K_train_HR' --validation_data_path './dataset/DIV2K/val/DIV2K_valid_HR'```)
+    * Set ```--training_data_path``` and ```--training_label_path``` to the directory containing training and validation data. For example, 
+    ```
+    python main.py --phase 'train' --training_stage 3 --training_data_path './dataset/DIV2K/train/DIV2K_train_HR' --validation_data_path './dataset/DIV2K/val/DIV2K_valid_HR'
+    ```
 3. Checkpoints will be saved in **<source_path>/ckpt**.
 4. Monitoring training:
     * Intermediate results will be available in **<source_path>/results/imgs_train**.
